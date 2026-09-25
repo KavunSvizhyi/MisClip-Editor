@@ -8,44 +8,34 @@ namespace MisClip_Editor.Core
 {
     public static class Editor
     {
-        public static void GetSnapshot()
+        public static bool JoinVideo(string outputPath, params string[] inputPaths)
         {
-            throw new NotImplementedException();
+            return FFMpeg.Join(outputPath, inputPaths);
         }
 
-        public static void GetGif()
+        public static bool JoinImage(string outputPath, int framerate, params string[] imagePaths)
         {
-            throw new NotImplementedException();
+            return FFMpeg.JoinImageSequence(outputPath, framerate, imagePaths);
         }
 
-        public static void JoinVideo()
+        public static bool Cut(string inputPath, string outputPath, int start, int end)
         {
-            throw new NotImplementedException();
+            return FFMpeg.SubVideo(inputPath, outputPath, TimeSpan.FromSeconds(start), TimeSpan.FromSeconds(end));
         }
 
-        public static void JoinImage()
+        public static bool Mute(string inputPath, string outputPath)
         {
-            throw new NotImplementedException();
+            return FFMpeg.Mute(inputPath, outputPath);
         }
 
-        public static void Cut()
+        public static bool ExtractAudio(string inputPath, string outputPath)
         {
-            throw new NotImplementedException();
+            return FFMpeg.ExtractAudio(inputPath, outputPath);
         }
 
-        public static void Mute()
+        public static bool AddOrReplaceAudio(string inputPath, string inputAudioPath, string outputPath)
         {
-            throw new NotImplementedException();
-        }
-
-        public static void ExtractAudio()
-        {
-            throw new NotImplementedException();
-        }
-
-        public static void AddOrReplaceAudio()
-        {
-            throw new NotImplementedException();
+            return FFMpeg.ReplaceAudio(inputPath, inputAudioPath, outputPath);
         }
     }
 }
