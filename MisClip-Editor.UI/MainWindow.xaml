@@ -25,9 +25,17 @@
                 <ColumnDefinition Width="3*"/>
             </Grid.ColumnDefinitions>
 
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+
+                <userControls:Preview />
+                <Rectangle Grid.Row="1" Fill="Crimson" />
+            </Grid>
             <Rectangle Fill="Aqua" />
             <Rectangle Grid.Column="1" Fill="GreenYellow" />
-            <Rectangle Grid.Column="2"  Fill="Pink" />
         </Grid>
         
         <!-- Footer -->
