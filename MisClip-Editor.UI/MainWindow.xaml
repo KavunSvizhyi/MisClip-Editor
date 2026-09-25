@@ -4,9 +4,32 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MisClip_Editor.UI"
+        xmlns:userControls="clr-namespace:MisClip_Editor.UI.Views.UserControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        
+        <!--Header (Menu bar)-->
+        <userControls:MenuBar />
+        
+        <!--Main content-->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
 
+            <Rectangle Fill="Aqua" />
+            <Rectangle Grid.Column="1" Fill="GreenYellow" />
+            <Rectangle Grid.Column="2"  Fill="Pink" />
+        </Grid>
+        
+        <!-- Footer -->
     </Grid>
 </Window>
