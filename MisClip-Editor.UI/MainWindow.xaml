@@ -22,19 +22,26 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="70"/>
                 <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="5"/>
                 <ColumnDefinition Width="3*"/>
             </Grid.ColumnDefinitions>
 
-            <Grid Grid.Column="2">
+            <Grid Grid.Column="3">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="2*" />
+                    <RowDefinition Height="3"/>
                     <RowDefinition Height="1*" />
                 </Grid.RowDefinitions>
 
                 <userControls:Preview />
-                <Rectangle Grid.Row="1" Fill="Crimson" />
+                <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" />
+                <Rectangle Grid.Row="2" Fill="Crimson" />
             </Grid>
+
+            <GridSplitter Grid.Column="2" HorizontalAlignment="Stretch" />
+
             <Rectangle Fill="Aqua" />
+            
             <Rectangle Grid.Column="1" Fill="GreenYellow" />
         </Grid>
         
