@@ -2,7 +2,6 @@
   <Folder Name="/src/">
     <Project Path="MisClip-Editor.Core/MisClip-Editor.Core.csproj" />
     <Project Path="MisClip-Editor.Infrastructure/MisClip-Editor.Infrastructure.csproj" />
-    <Project Path="MisClip-Editor.UI/MisClip-Editor.UI.csproj" />
   </Folder>
   <Folder Name="/test/" />
 </Solution>
