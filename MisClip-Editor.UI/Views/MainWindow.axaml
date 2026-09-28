@@ -25,6 +25,8 @@
         <Grid ShowGridLines="True"
               ColumnDefinitions="100,2*,4,8*">
 
+            <local:SideBar />
+
             <GridSplitter Grid.Column="2" />
 
             <Grid Grid.Column="3" 
