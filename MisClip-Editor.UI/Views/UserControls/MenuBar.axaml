@@ -1,0 +1,27 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1350" d:DesignHeight="600"
+             x:Class="MisClip_Editor.UI.Views.UserControls.MenuBar">
+    
+    <Menu>
+            <MenuItem Header="File">
+                <MenuItem Header="_New Project..." />
+                <MenuItem Header="_Save Project..." />
+                <MenuItem Header="_Open Project..." />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="Edit">
+                
+            </MenuItem>
+            <MenuItem Header="View">
+                
+            </MenuItem>
+            <MenuItem Header="Help">
+                
+            </MenuItem>
+    </Menu>
+
+</UserControl>
