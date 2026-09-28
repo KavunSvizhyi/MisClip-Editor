@@ -1,0 +1,26 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="100" d:DesignHeight="700"
+             x:Class="MisClip_Editor.UI.Views.UserControls.SideBar">
+
+    <StackPanel>
+        <Button Content="Media" 
+                Height="100"
+                HorizontalAlignment="Stretch" 
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center" />
+        <Button Content="Effects" 
+                Height="100"
+                HorizontalAlignment="Stretch" 
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center" />
+        <Button Content="Transition" 
+                Height="100"
+                HorizontalAlignment="Stretch" 
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center" />
+    </StackPanel>
+
+</UserControl>

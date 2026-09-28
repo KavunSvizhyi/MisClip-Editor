@@ -3,6 +3,7 @@
         xmlns:vm="using:MisClip_Editor.UI.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:usercontrols="using:MisClip_Editor.UI.Views.UserControls"
         xmlns:local="clr-namespace:MisClip_Editor.UI.Views.UserControls"
         mc:Ignorable="d" d:DesignWidth="1350" d:DesignHeight="700"
         x:Class="MisClip_Editor.UI.Views.MainWindow"
@@ -24,6 +25,8 @@
 
         <Grid ShowGridLines="True"
               ColumnDefinitions="100,2*,4,8*">
+
+            <local:SideBar />
 
             <GridSplitter Grid.Column="2" />
 
