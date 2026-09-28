@@ -23,14 +23,37 @@
         <local:MenuBar DockPanel.Dock="Top"/>
 
         <Grid ShowGridLines="True"
-              ColumnDefinitions="100,2*,4,8*">
+              ColumnDefinitions="100,Auto,4,*"
+              Name="TestContent">
 
-            <local:SideBar />
+            <StackPanel Width="100">
+                <Button Content="Media"
+                        Click="NavButton_Click"
+                        Height="100"
+                        HorizontalAlignment="Stretch" 
+                        HorizontalContentAlignment="Center"
+                        VerticalContentAlignment="Center" />
+                <Button Content="Effects"
+                        Height="100"
+                        HorizontalAlignment="Stretch" 
+                        HorizontalContentAlignment="Center"
+                        VerticalContentAlignment="Center" />
+                <Button Content="Transitions"
+                        Height="100"
+                        HorizontalAlignment="Stretch" 
+                        HorizontalContentAlignment="Center"
+                        VerticalContentAlignment="Center" />
+            </StackPanel>
 
-            <GridSplitter Grid.Column="2" />
+            <!--Test Content-->
+            <Rectangle Grid.Column="1"
+                       Fill="Wheat"
+                       Name="Test"
+                       Width="300" />
+
+            <GridSplitter Grid.Column="2" Name="Splitter"/>
 
             <Grid Grid.Column="3" 
-                  Grid.Row="1"
                   ShowGridLines="True"
                   RowDefinitions=".5*,6*,4,4*">
 

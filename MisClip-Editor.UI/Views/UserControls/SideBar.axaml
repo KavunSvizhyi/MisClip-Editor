@@ -2,25 +2,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="100" d:DesignHeight="700"
+             xmlns:local="using:MisClip_Editor.UI.Views.UserControls"
+             mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="700"
              x:Class="MisClip_Editor.UI.Views.UserControls.SideBar">
 
-    <StackPanel>
-        <Button Content="Media" 
-                Height="100"
-                HorizontalAlignment="Stretch" 
-                HorizontalContentAlignment="Center"
-                VerticalContentAlignment="Center" />
-        <Button Content="Effects" 
-                Height="100"
-                HorizontalAlignment="Stretch" 
-                HorizontalContentAlignment="Center"
-                VerticalContentAlignment="Center" />
-        <Button Content="Transition" 
-                Height="100"
-                HorizontalAlignment="Stretch" 
-                HorizontalContentAlignment="Center"
-                VerticalContentAlignment="Center" />
-    </StackPanel>
+    <Grid ShowGridLines="True" ColumnDefinitions="100,Auto,4">
+        <StackPanel Width="100">
+            <Button Content="Media" 
+                    Name="MediaButton"
+                    Click="MediaButton_Click"
+                    Height="100"
+                    HorizontalAlignment="Stretch" 
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" />
+            <Button Content="Effects" 
+                    Name="EffectsButton"
+                    Click="MediaButton_Click"
+                    Height="100"
+                    HorizontalAlignment="Stretch" 
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" />
+            <Button Content="Transitions" 
+                    Name="TransitionsButton"
+                    Click="MediaButton_Click"
+                    Height="100"
+                    HorizontalAlignment="Stretch" 
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" />
+        </StackPanel>
+
+        <local:SideBarContent Grid.Column="1" />
+    </Grid>
 
 </UserControl>

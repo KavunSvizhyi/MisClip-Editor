@@ -10,5 +10,13 @@ namespace MisClip_Editor.UI.Views.UserControls
         {
             InitializeComponent();
         }
+
+        private void MediaButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            if (sender is Button button)
+            {
+
+            }
+        }
     }
 }
